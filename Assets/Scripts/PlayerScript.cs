@@ -9,7 +9,7 @@ public class PlayerScript : MonoBehaviour
     bool moveForwardFlg;
     bool moveBackFlg;
 
-    float moveSpeed = 30;
+    float moveSpeed = 50;
     float rotateSpeed = 100;
 
     // Start is called before the first frame update
@@ -56,7 +56,7 @@ public class PlayerScript : MonoBehaviour
     }
 
 
-    private void OnCollisionEnter(Collision col)
+    public void OnCollisionEnter(Collision col)
     {
         if (col.collider.tag == "Door")
         {
@@ -70,14 +70,9 @@ public class PlayerScript : MonoBehaviour
             SceneManager.LoadScene("Main");
         }
 
-        if (col.collider.tag == "Trash")
-        {
-
-            ScoreScript.Count += 1;
-            Debug.Log(ScoreScript.Count);
-            Destroy(col.gameObject);
-        }
-
+ 
 
     }
+
+
 }

@@ -6,7 +6,7 @@ public class TrashCreater : MonoBehaviour
 {
     public GameObject petbottle;
     float timer = 0;
-    int interval = 3;
+    int interval = 2;
     // Start is called before the first frame update
     void Start()
     {

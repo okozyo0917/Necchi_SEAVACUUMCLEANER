@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreScript : MonoBehaviour
+public class HIREScript : MonoBehaviour
 {
-    public Text Scorelabel;
-    public static int Count = 0;
 
+  
+    public static int total;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,15 +18,14 @@ public class ScoreScript : MonoBehaviour
     void Update()
     {
         
-        Scorelabel.text = Count.ToString();
-
-        if (Count > 5)
-        {
-            Count = 5;
-        }
     }
 
 
+    public void OnCollisionEnter(Collision col)
+    {
+        total += ScoreScript.Count;
 
-
+            ScoreScript.Count = 0;
+        
+    }
 }

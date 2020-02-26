@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreScript : MonoBehaviour
+public class ScoreScript2 : MonoBehaviour
 {
-    public Text Scorelabel;
-    public static int Count = 0;
-
+    public Text Scorelabel2;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,16 +15,8 @@ public class ScoreScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        Scorelabel.text = Count.ToString();
-
-        if (Count > 5)
-        {
-            Count = 5;
-        }
+       Scorelabel2.text = HIREScript.total.ToString();
     }
-
-
 
 
 }
