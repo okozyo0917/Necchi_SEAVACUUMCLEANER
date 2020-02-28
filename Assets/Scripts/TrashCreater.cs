@@ -6,7 +6,7 @@ public class TrashCreater : MonoBehaviour
 {
     public GameObject petbottle;
     float timer = 0;
-    int interval = 2;
+    int interval = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +19,7 @@ public class TrashCreater : MonoBehaviour
         timer += Time.deltaTime;
         if (timer >= interval)
         {
-            Instantiate(petbottle, new Vector3(Random.Range(-600f, 600f),-2, Random.Range(-600f, 200f)), transform.rotation);
+            Instantiate(petbottle, new Vector3(Random.Range(-400f, 400f),-2, Random.Range(-300f,200)), transform.rotation);
             timer = 0;
  
         }

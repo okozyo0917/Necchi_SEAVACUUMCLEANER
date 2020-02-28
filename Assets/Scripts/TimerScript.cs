@@ -11,6 +11,7 @@ public class TimerScript : MonoBehaviour
     public static float timer = 0f;
     public static float timer1 = 0f;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,10 +26,14 @@ public class TimerScript : MonoBehaviour
         timerText.text = Mathf.FloorToInt(timer).ToString();
 
 
-        if (timer <= 0)
+        if (timer < 0)
         {
+            timer1 = 0;
+            timer = 0;
             SceneManager.LoadScene("RESULT");
+           
         }
+
 
     }
 }

@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class TimerScript2 : MonoBehaviour
 {
     public Text timerText1;
+
  
     // Start is called before the first frame update
     void Start()
@@ -23,9 +24,15 @@ public class TimerScript2 : MonoBehaviour
         timerText1.text = Mathf.FloorToInt(TimerScript.timer).ToString();
 
 
-        if (TimerScript.timer <= 0)
-        {
+        if (TimerScript.timer < 0) {
+
+            TimerScript.timer1 = 0;
+            TimerScript.timer = 0;
             SceneManager.LoadScene("RESULT");
-        }
+
+    }
+        
+        
+    
     }
 }

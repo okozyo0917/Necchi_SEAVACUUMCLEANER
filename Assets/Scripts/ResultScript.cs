@@ -11,14 +11,15 @@ public class ResultScript : MonoBehaviour
     public Text Scorelabel4;
 
   
-    public int score_num = 0; // スコア変数
+    public float  score_num = 0; // スコア変数
+    float a;
 
 
     // Start is called before the first frame update
     void Start()
     {
         // スコアのロード
-        score_num = PlayerPrefs.GetInt("SCORE", 0);
+        score_num = PlayerPrefs.GetFloat("SCORE", 0);
         score_num += HIREScript.total;
     }
 
@@ -32,18 +33,22 @@ public class ResultScript : MonoBehaviour
       
 
         // スコアを保存
-        PlayerPrefs.SetInt("SCORE", score_num);
+        PlayerPrefs.SetFloat("SCORE", score_num);
         PlayerPrefs.Save();
 
         Scorelabel2.text = HIREScript.total.ToString();
         Scorelabel3.text = score_num.ToString();
+        a = score_num/166;
+        Scorelabel4.text =a.ToString(); 
 
         if (Input.GetKey(KeyCode.Space))
         {
 
             SceneManager.LoadScene("Title");
-
+            HIREScript.total = 0;
 
         }
+
+
     }
 }
