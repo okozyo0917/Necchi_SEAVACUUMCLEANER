@@ -61,13 +61,15 @@ public class PlayerScript : MonoBehaviour
         if (col.collider.tag == "Door")
         {
 
-            SceneManager.LoadScene("Entrance");
+            SceneManager.LoadScene("Entrance2");
         }
 
         if (col.collider.tag == "Door2")
         {
 
             SceneManager.LoadScene("Main");
+
+
         }
 
  
