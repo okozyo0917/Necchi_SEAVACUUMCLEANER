@@ -90,4 +90,11 @@ public class PlayerScript : MonoBehaviour
     }
 
 
+    public void AddTime(int value1)
+    {
+        TimerScript.timer1 += value1;
+        Debug.Log("TimerUp");
+    }
+
+
 }
