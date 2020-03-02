@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.SceneManagement;
+
 
 public class FishScript : MonoBehaviour
 {
@@ -23,6 +23,9 @@ public class FishScript : MonoBehaviour
 
     public void OnCollisionEnter(Collision col)
     {
-        SceneManager.LoadScene("GameOver");
+        if (col.gameObject.tag == "Player") {
+            col.gameObject.GetComponent<PlayerScript>().GameOver();
+        }
+
     }
 }

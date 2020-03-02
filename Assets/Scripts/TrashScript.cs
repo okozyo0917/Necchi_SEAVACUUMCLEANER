@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TrashScript : MonoBehaviour
 {
+    public int point = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,18 +19,13 @@ public class TrashScript : MonoBehaviour
 
     public void OnCollisionEnter(Collision col)
     {
-        if (col.collider.tag == "Player")
+        if (col.gameObject.tag == "Player")
         {
-            SendMessage("AddScore");
+            col.gameObject.GetComponent<PlayerScript>().AddScore(point);
             Destroy(this.gameObject);
 
 
         }
     }
 
-    void AddScore()
-    {
-        ScoreScript.Count += 1;
-        Debug.Log(ScoreScript.Count);
-    }
 }

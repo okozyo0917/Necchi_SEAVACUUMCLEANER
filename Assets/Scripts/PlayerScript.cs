@@ -77,4 +77,17 @@ public class PlayerScript : MonoBehaviour
     }
 
 
+    public void AddScore(int value)
+    {
+        ScoreScript.Count += value;
+        Debug.Log(ScoreScript.Count);
+    }
+
+    public void GameOver()
+    {
+
+        SceneManager.LoadScene("GameOver");
+    }
+
+
 }
