@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-using UnityEngine.SceneManagement;
+
 
 public class FishScript2 : MonoBehaviour
 {
@@ -30,6 +30,6 @@ public class FishScript2 : MonoBehaviour
 
     public void OnCollisionEnter(Collision col)
     {
-        SceneManager.LoadScene("GameOver");
+        col.gameObject.GetComponent<PlayerScript>().GameOver();
     }
 }

@@ -85,7 +85,9 @@ public class PlayerScript : MonoBehaviour
 
     public void GameOver()
     {
-
+        TimerScript.timer1 = 0;
+        TimerScript.timer = 0;
+        ScoreScript.Count = 0;
         SceneManager.LoadScene("GameOver");
     }
 

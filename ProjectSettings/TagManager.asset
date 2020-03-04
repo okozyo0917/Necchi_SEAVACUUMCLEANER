@@ -9,6 +9,7 @@ TagManager:
   - Door
   - Door2
   - Points
+  - Trash2
   layers:
   - Default
   - TransparentFX

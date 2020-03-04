@@ -7,9 +7,10 @@ using UnityEngine.SceneManagement;
 public class TimerScript : MonoBehaviour
 {
     public Text timerText;
-    public static float timerMax = 40f;
+    public static float timerMax = 50f;
     public static float timer = 0f;
     public static float timer1 = 0f;
+    public GameObject StarGet;
 
 
     // Start is called before the first frame update
@@ -30,10 +31,16 @@ public class TimerScript : MonoBehaviour
         {
             timer1 = 0;
             timer = 0;
+            ScoreScript.Count = 0;
             SceneManager.LoadScene("RESULT");
            
         }
 
+
+            if (ScoreScript.Count >=3)
+            {
+                StarGet.SetActive(true);
+            }
 
     }
 }

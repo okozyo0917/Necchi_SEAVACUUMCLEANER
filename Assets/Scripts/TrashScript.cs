@@ -23,9 +23,10 @@ public class TrashScript : MonoBehaviour
         {
             col.gameObject.GetComponent<PlayerScript>().AddScore(point);
             Destroy(this.gameObject);
-
+            
 
         }
+
     }
 
 }
