@@ -11,7 +11,7 @@ public class ResultScript : MonoBehaviour
     public Text Scorelabel4;
 
   
-    public float  score_num = 0; // スコア変数
+    public static float  score_num = 0; // スコア変数
     float a;
 
 
@@ -41,11 +41,12 @@ public class ResultScript : MonoBehaviour
         a = score_num/1.66f;
         Scorelabel4.text =a.ToString(); 
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
 
             SceneManager.LoadScene("Title");
             HIREScript.total = 0;
+            Debug.Log("title");
 
         }
 

@@ -8,10 +8,13 @@ public class HIREScript : MonoBehaviour
 
   
     public static int total=0;
+
+    public AudioClip sound3;
+    AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -24,8 +27,11 @@ public class HIREScript : MonoBehaviour
     public void OnCollisionEnter(Collision col)
     {
         total += ScoreScript.Count;
-
-            ScoreScript.Count = 0;
+        if (ScoreScript.Count >= 1)
+        {
+            audioSource.PlayOneShot(sound3);
+        }
+        ScoreScript.Count = 0;
         
     }
 }

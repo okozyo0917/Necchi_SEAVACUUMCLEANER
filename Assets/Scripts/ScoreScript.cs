@@ -20,9 +20,9 @@ public class ScoreScript : MonoBehaviour
         
         Scorelabel.text = Count.ToString();
 
-        if (Count > 5)
+        if (Count > 10)
         {
-            Count = 5;
+            Count = 10;
         }
     }
 

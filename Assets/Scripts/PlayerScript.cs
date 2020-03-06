@@ -9,7 +9,7 @@ public class PlayerScript : MonoBehaviour
     bool moveForwardFlg;
     bool moveBackFlg;
 
-    float moveSpeed = 50;
+    float moveSpeed = 60;
     float rotateSpeed = 100;
 
     public AudioClip sound;

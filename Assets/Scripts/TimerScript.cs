@@ -37,7 +37,7 @@ public class TimerScript : MonoBehaviour
         }
 
 
-            if (ScoreScript.Count >=3)
+            if (ScoreScript.Count >=5)
             {
                 StarGet.SetActive(true);
             }
