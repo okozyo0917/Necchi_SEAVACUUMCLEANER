@@ -12,9 +12,14 @@ public class PlayerScript : MonoBehaviour
     float moveSpeed = 50;
     float rotateSpeed = 100;
 
+    public AudioClip sound;
+    public AudioClip sound2;
+    AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
     }
 
@@ -81,6 +86,7 @@ public class PlayerScript : MonoBehaviour
     {
         ScoreScript.Count += value;
         Debug.Log(ScoreScript.Count);
+        audioSource.PlayOneShot(sound);
     }
 
     public void GameOver()
@@ -96,6 +102,7 @@ public class PlayerScript : MonoBehaviour
     {
         TimerScript.timer1 += value1;
         Debug.Log("TimerUp");
+        audioSource.PlayOneShot(sound2);
     }
 
 

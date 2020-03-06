@@ -38,7 +38,7 @@ public class ResultScript : MonoBehaviour
 
         Scorelabel2.text = HIREScript.total.ToString();
         Scorelabel3.text = score_num.ToString();
-        a = score_num/166;
+        a = score_num/1.66f;
         Scorelabel4.text =a.ToString(); 
 
         if (Input.GetKey(KeyCode.Space))
@@ -47,6 +47,11 @@ public class ResultScript : MonoBehaviour
             SceneManager.LoadScene("Title");
             HIREScript.total = 0;
 
+        }
+
+        if (a >=100)
+        {
+            SceneManager.LoadScene("GAMECLEAR");
         }
 
 
