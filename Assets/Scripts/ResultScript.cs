@@ -54,6 +54,10 @@ public class ResultScript : MonoBehaviour
 
         if (a >=100)
         {
+            score_num = 0;
+            PlayerPrefs.SetFloat("SCORE", score_num);
+            PlayerPrefs.Save();
+            HIREScript.total = 0;
             SceneManager.LoadScene("GAMECLEAR");
         }
 

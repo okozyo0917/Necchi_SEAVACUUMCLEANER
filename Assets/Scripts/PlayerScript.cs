@@ -85,7 +85,7 @@ public class PlayerScript : MonoBehaviour
     public void AddScore(int value)
     {
         ScoreScript.Count += value;
-        Debug.Log(ScoreScript.Count);
+
         audioSource.PlayOneShot(sound);
     }
 
@@ -101,7 +101,7 @@ public class PlayerScript : MonoBehaviour
     public void AddTime(int value1)
     {
         TimerScript.timer1 += value1;
-        Debug.Log("TimerUp");
+
         audioSource.PlayOneShot(sound2);
     }
 

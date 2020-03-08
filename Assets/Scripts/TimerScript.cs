@@ -11,6 +11,7 @@ public class TimerScript : MonoBehaviour
     public static float timer = 0f;
     public static float timer1 = 0f;
     public GameObject StarGet;
+    public GameObject Start1;
 
 
     // Start is called before the first frame update
@@ -42,5 +43,13 @@ public class TimerScript : MonoBehaviour
                 StarGet.SetActive(true);
             }
 
+        if (timer1 < -2.0f)
+        {
+            if (SceneManager.GetActiveScene().name == "Entrance")
+            {
+                Start1.SetActive(false);
+            }
+
+        }
     }
 }
