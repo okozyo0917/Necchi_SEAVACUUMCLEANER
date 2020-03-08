@@ -22,5 +22,13 @@ public class TitleScript : MonoBehaviour
 
 
         }
+
+        if (Input.GetKeyDown("r"))
+        {
+
+            SceneManager.LoadScene("Rule1");
+
+
+        }
     }
 }

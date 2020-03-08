@@ -7,7 +7,7 @@ public class PlayerScript : MonoBehaviour
 {
     Rigidbody rb;
     bool moveForwardFlg;
-    bool moveBackFlg;
+    //bool moveBackFlg;
 
     float moveSpeed = 60;
     float rotateSpeed = 100;
@@ -27,7 +27,7 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         moveForwardFlg = Input.GetKey(KeyCode.UpArrow);
-        moveBackFlg = Input.GetKey(KeyCode.DownArrow);
+        //moveBackFlg = Input.GetKey(KeyCode.DownArrow);
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
@@ -48,10 +48,10 @@ public class PlayerScript : MonoBehaviour
         {
             rb.velocity = transform.forward * moveSpeed;
         }
-        else if (moveBackFlg)
-        {
-            rb.velocity = -transform.forward * moveSpeed;
-        }
+        //else if (moveBackFlg)
+        //{
+        //    rb.velocity = -transform.forward * moveSpeed;
+        //}
         else
         {
             rb.velocity = Vector3.zero;

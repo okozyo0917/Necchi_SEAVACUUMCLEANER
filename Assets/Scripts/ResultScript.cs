@@ -13,6 +13,7 @@ public class ResultScript : MonoBehaviour
   
     public static float  score_num = 0; // スコア変数
     float a;
+    int b;
 
 
     // Start is called before the first frame update
@@ -38,8 +39,9 @@ public class ResultScript : MonoBehaviour
 
         Scorelabel2.text = HIREScript.total.ToString();
         Scorelabel3.text = score_num.ToString();
-        a = score_num/1.66f;
-        Scorelabel4.text =a.ToString(); 
+        a=score_num/1.66f;
+        b = Mathf.RoundToInt(a);
+        Scorelabel4.text =b.ToString(); 
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
