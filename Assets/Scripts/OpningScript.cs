@@ -18,7 +18,7 @@ public class OpningScript : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer > 10)
+        if (timer > 10.5f)
         {
             SceneManager.LoadScene("Entrance");
         }

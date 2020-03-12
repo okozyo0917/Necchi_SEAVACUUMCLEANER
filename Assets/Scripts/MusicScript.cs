@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MusicScript : MonoBehaviour
 {
@@ -12,15 +13,10 @@ public class MusicScript : MonoBehaviour
 
     private void Awake()
     {
-        int numMusicPlayers = FindObjectsOfType<OpningScript>().Length;
-        if (numMusicPlayers > 1)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            DontDestroyOnLoad(gameObject);
-        }
+
+        DontDestroyOnLoad(gameObject);
+
+
 
 
     }
@@ -28,6 +24,12 @@ public class MusicScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        if (SceneManager.GetActiveScene().name == "Title")
+        {
+            Destroy(gameObject);
+        }
+
+
     }
 }
