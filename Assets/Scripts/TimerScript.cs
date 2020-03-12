@@ -43,7 +43,7 @@ public class TimerScript : MonoBehaviour
                 StarGet.SetActive(true);
             }
 
-        if (timer1 < -2.0f)
+        if (timer1 < -3.0f)
         {
             if (SceneManager.GetActiveScene().name == "Entrance")
             {

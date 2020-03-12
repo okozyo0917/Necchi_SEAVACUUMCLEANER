@@ -287,7 +287,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 9f36652a8e8257e4baa76df5c00ab55f, type: 3}
     m_FontSize: 30
     m_FontStyle: 1
     m_BestFit: 0
@@ -543,8 +543,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 780418803}
-  m_LocalRotation: {x: 0.03281364, y: 0.96710104, z: 0.17129873, w: -0.1851907}
-  m_LocalPosition: {x: 470.7328, y: -312.63416, z: 573.96686}
+  m_LocalRotation: {x: 0.13538997, y: 0.006537747, z: 0.00088611234, w: -0.99077046}
+  m_LocalPosition: {x: 441.06696, y: -444.5713, z: -600.9915}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -709,7 +709,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 9f36652a8e8257e4baa76df5c00ab55f, type: 3}
     m_FontSize: 30
     m_FontStyle: 1
     m_BestFit: 0
