@@ -8,6 +8,7 @@ public class HIREScript : MonoBehaviour
 
   
     public static int total=0;
+    public GameObject DoorOpen;
 
     public AudioClip sound3;
     AudioSource audioSource;
@@ -32,6 +33,7 @@ public class HIREScript : MonoBehaviour
             audioSource.PlayOneShot(sound3);
         }
         ScoreScript.Count = 0;
-        
+        DoorOpen.SetActive(true);
+
     }
 }

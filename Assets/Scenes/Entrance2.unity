@@ -695,7 +695,7 @@ RectTransform:
   - {fileID: 1997106890}
   - {fileID: 1196495885}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -873,7 +873,7 @@ Transform:
   - {fileID: 770721757}
   - {fileID: 607951504}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &567241629
 GameObject:
@@ -939,7 +939,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &604562783
 GameObject:
@@ -1293,12 +1293,12 @@ GameObject:
   - component: {fileID: 670366038}
   - component: {fileID: 670366037}
   m_Layer: 0
-  m_Name: Cube (6)
+  m_Name: Door
   m_TagString: Door2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &670366037
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1365,10 +1365,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 670366036}
   m_LocalRotation: {x: 0.7084224, y: -0, z: -0, w: 0.7057887}
-  m_LocalPosition: {x: -4.6, y: -2.274998, z: -45.92749}
-  m_LocalScale: {x: -23.564121, y: 6.086953, z: 10.468701}
+  m_LocalPosition: {x: 3.2639966, y: -3.74, z: -377.95}
+  m_LocalScale: {x: -23.564121, y: 6.086952, z: 10.468698}
   m_Children: []
-  m_Father: {fileID: 2022029802}
+  m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90.21399, y: -0.000015258789, z: -0.000015258789}
 --- !u!1001 &690274005
@@ -1383,6 +1383,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: SCORE
       objectReference: {fileID: 0}
+    - target: {fileID: 405006459500669755, guid: 7685d374f2d01764ea15d1c821bfb6d7,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 9f36652a8e8257e4baa76df5c00ab55f,
+        type: 3}
     - target: {fileID: 6254481362575829262, guid: 7685d374f2d01764ea15d1c821bfb6d7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1444,12 +1450,6 @@ PrefabInstance:
       value: Pickup PET
       objectReference: {fileID: 0}
     - target: {fileID: 405006460212042122, guid: 7685d374f2d01764ea15d1c821bfb6d7,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 9f36652a8e8257e4baa76df5c00ab55f,
-        type: 3}
-    - target: {fileID: 405006459500669755, guid: 7685d374f2d01764ea15d1c821bfb6d7,
         type: 3}
       propertyPath: m_FontData.m_Font
       value: 
@@ -1964,7 +1964,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!45 &921052937
 Skybox:
@@ -2528,7 +2528,7 @@ Transform:
   m_LocalScale: {x: -15.027215, y: -7.7652, z: -7.7652}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1254157432 stripped
 MonoBehaviour:
@@ -2619,8 +2619,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1351078846}
-  m_LocalRotation: {x: -0.2149954, y: 0.6675291, z: 0.21075468, w: 0.6810025}
-  m_LocalPosition: {x: -769.0982, y: -1051.6198, z: -29.260872}
+  m_LocalRotation: {x: -0.18961723, y: 0.18521024, z: 0.036453832, w: 0.9635422}
+  m_LocalPosition: {x: -93.60749, y: -128.78136, z: -502.79813}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3528,9 +3528,8 @@ Transform:
   - {fileID: 271023080}
   - {fileID: 1943044281}
   - {fileID: 1553577475}
-  - {fileID: 670366040}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2133196548
 GameObject:
@@ -3674,6 +3673,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: TIME
       objectReference: {fileID: 0}
+    - target: {fileID: 3437962945431135415, guid: e15ab20a4ab734944b99a59d9d7376be,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 9f36652a8e8257e4baa76df5c00ab55f,
+        type: 3}
     - target: {fileID: 3437962944993541250, guid: e15ab20a4ab734944b99a59d9d7376be,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3729,23 +3734,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3437962944993541249, guid: e15ab20a4ab734944b99a59d9d7376be,
-        type: 3}
-      propertyPath: StarGet
-      value: 
-      objectReference: {fileID: 528774948}
     - target: {fileID: 3437962944603397771, guid: e15ab20a4ab734944b99a59d9d7376be,
         type: 3}
       propertyPath: m_FontData.m_Font
       value: 
       objectReference: {fileID: 12800000, guid: 9f36652a8e8257e4baa76df5c00ab55f,
         type: 3}
-    - target: {fileID: 3437962945431135415, guid: e15ab20a4ab734944b99a59d9d7376be,
+    - target: {fileID: 3437962944993541249, guid: e15ab20a4ab734944b99a59d9d7376be,
         type: 3}
-      propertyPath: m_FontData.m_Font
+      propertyPath: StarGet
       value: 
-      objectReference: {fileID: 12800000, guid: 9f36652a8e8257e4baa76df5c00ab55f,
-        type: 3}
+      objectReference: {fileID: 528774948}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e15ab20a4ab734944b99a59d9d7376be, type: 3}
 --- !u!4 &3778932047206233737
@@ -3915,6 +3914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd250c21b031e2419f2f0f03bc4ef5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoorOpen: {fileID: 670366036}
   sound3: {fileID: 8300000, guid: 57c41ee899ff159459456fa25f7d7811, type: 3}
 --- !u!82 &7976994018785198232
 AudioSource:
