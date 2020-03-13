@@ -11,6 +11,7 @@ public class TimerScript : MonoBehaviour
     public static float timer = 0f;
     public static float timer1 = 0f;
     public GameObject StarGet;
+    public GameObject StarGet2;
     public GameObject Start1;
 
 
@@ -38,10 +39,20 @@ public class TimerScript : MonoBehaviour
         }
 
 
-            if (ScoreScript.Count >=5)
+            if (ScoreScript.Count ==10)
             {
                 StarGet.SetActive(true);
             }
+
+        if (ScoreScript.Count == 9)
+        {
+            StarGet.SetActive(true);
+        }
+
+        if (ScoreScript.Count >=5 && ScoreScript.Count!=10 && ScoreScript.Count != 9)
+        {
+            StarGet2.SetActive(true);
+        }
 
         if (timer1 < -3.0f)
         {
